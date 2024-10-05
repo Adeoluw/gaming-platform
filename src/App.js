@@ -4,7 +4,9 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Trending from "./components/Trending";
 import MainSectionOne from "./components/MainSectionOne";
-import Devsection from "./components/Devsection"
+import Devsection from "./components/Devsection";
+import Projects from "./components/Projects";
+import Emailsub from "./components/Emailsub";
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
       <Trending />
       <MainSectionOne />
       <Devsection />
+      <Projects />
+      <Emailsub />
+
     </div>
   );
 }

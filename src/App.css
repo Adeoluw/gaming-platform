@@ -249,7 +249,7 @@ nav {
   flex-direction: column; */
 }
 
-.category-icon-con{
+.category-icon-con {
   background-color: white;
   padding: 15px;
   display: flex;
@@ -258,10 +258,87 @@ nav {
   border-radius: 50%;
 }
 
-.styled-icon{
-  color: #DC7000;
+.styled-icon {
+  color: #dc7000;
 }
 
-.arrow{
-  color: #DC7000;
+.arrow {
+  color: #dc7000;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 100px;
+  padding-inline: 150px;
+  background-color: #654321;
+}
+
+.project-section-head {
+  text-align: center;
+  line-height: 45px;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.leadmagnet-head {
+  text-align: left;
+}
+
+.leadmagnet-head h2 {
+  padding-bottom: 10px;
+}
+
+.leadmagnet-section {
+  background-color: #654321;
+  padding-inline: 150px;
+  padding-block: 100px;
+}
+
+.leadmagnet {
+  margin-top: 30px;
+  background-color: #898989;
+  display: flex;
+  padding-block: 50px;
+  border-radius: 10px;
+  padding-inline: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lead-magnet-form {
+  background-color: white;
+  padding-block: 5px;
+  border-radius: 10px;
+  padding-inline: 4px;
+  width: 30%;
+  display: flex;
+}
+
+.lead-magnet-form input {
+  border: none;
+}
+
+.lead-magnet-form input:focus-within {
+  border: none;
+}
+
+.lead-magnet-form button {
+  padding-inline: 20px;
+  padding-block: 10px;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #fb9e3c;
+  border: none;
+  margin-left: auto;
 }
