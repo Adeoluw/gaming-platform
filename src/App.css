@@ -342,3 +342,61 @@ nav {
   border: none;
   margin-left: auto;
 }
+
+
+.leadmagnet-text{
+  width: 50%;
+}
+
+footer{
+  background-color: #070707;
+  display: flex;
+  padding-inline: 150px;
+  padding-block: 100px;
+  justify-content: space-evenly;
+}
+
+.footer-about ul li{
+  list-style-type: none;
+}
+
+.footer-about-head{
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.socials-footer{
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.social{
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  height: 30px;
+}
+
+.footer-logo-section{
+  width: 25%;
+}
+
+.contact-footer{
+  width: 25%;
+}
+
+.contact-footer p:first-child{
+  margin-bottom: 15px;
+}
+
+.footer-logo-section h1{
+  margin-bottom: 15px;
+}
+
+.footer-logo-section p{
+  margin-bottom: 15px;
+}
