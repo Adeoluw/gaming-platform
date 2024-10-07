@@ -207,6 +207,7 @@ nav {
 
 .spidey {
   z-index: -1;
+  width: 100%;
 }
 
 .dev-section {
@@ -279,8 +280,8 @@ nav {
 .project-section-head {
   text-align: center;
   line-height: 45px;
-  width: 50%;
-  padding-bottom: 10px;
+  width: auto;
+  padding-bottom: 20px;
 }
 
 .projects {
@@ -320,7 +321,7 @@ nav {
   padding-block: 5px;
   border-radius: 10px;
   padding-inline: 4px;
-  width: 30%;
+  width: auto;
   display: flex;
 }
 
@@ -343,35 +344,35 @@ nav {
   margin-left: auto;
 }
 
-
-.leadmagnet-text{
+.leadmagnet-text {
   width: 50%;
 }
 
-footer{
+footer {
   background-color: #070707;
   display: flex;
   padding-inline: 150px;
   padding-block: 100px;
+  align-items: center;
   justify-content: space-evenly;
 }
 
-.footer-about ul li{
+.footer-about ul li {
   list-style-type: none;
 }
 
-.footer-about-head{
+.footer-about-head {
   margin-bottom: 15px;
   font-weight: bold;
 }
 
-.socials-footer{
+.socials-footer {
   display: flex;
   gap: 10px;
   align-items: flex-end;
 }
 
-.social{
+.social {
   border-radius: 50%;
   border: 1px solid white;
   display: flex;
@@ -379,24 +380,203 @@ footer{
   padding: 5px;
   align-items: center;
   height: 30px;
+  cursor: pointer;
 }
 
-.footer-logo-section{
+.footer-logo-section {
   width: 25%;
 }
 
-.contact-footer{
+.contact-footer {
   width: 25%;
 }
 
-.contact-footer p:first-child{
+.contact-footer p:first-child {
   margin-bottom: 15px;
 }
 
-.footer-logo-section h1{
+.footer-logo-section h1 {
   margin-bottom: 15px;
 }
 
-.footer-logo-section p{
+.footer-logo-section p {
   margin-bottom: 15px;
+}
+
+.top-three {
+  width: 30%;
+}
+.different-bottom {
+  width: 20%;
+}
+
+.bottom-two {
+  width: 35%;
+}
+
+@media only screen and (max-width: 1320px) {
+  .hero-section {
+    padding-inline: 100px;
+  }
+
+  .project-section {
+    padding-inline: 80px;
+  }
+}
+
+@media only screen and (max-width: 1168px) {
+  .hero-section {
+    gap: 90px;
+  }
+  .main-sectionone-head > h1 {
+    width: auto;
+  }
+
+  .main-sectionone {
+    padding-inline: 100px;
+  }
+
+  .trending-games {
+    padding-inline: 100px;
+  }
+
+  .dev-section-head {
+    width: 85%;
+  }
+
+  .dev-section-head h1 {
+    margin-bottom: 15px;
+  }
+
+  .categories {
+    padding-inline: 100px;
+  }
+
+  footer {
+    padding-inline: 50px;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .main-section-one-text {
+    text-align: left;
+    padding-inline: 50px;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .hero-section {
+    padding-inline: 50px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .trending-games {
+    padding-inline: 50px;
+  }
+
+  .main-sectionone {
+    padding-inline: 50px;
+  }
+
+  .categories {
+    padding-inline: 50px;
+  }
+
+  .project-section {
+    padding-inline: 50px;
+  }
+
+  .leadmagnet-section {
+    padding-inline: 65px;
+  }
+
+  .hero-section > img {
+    right: 48%;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .hero-section {
+    padding-inline: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    padding-inline: 100px;
+  }
+
+  .hero-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .unreal {
+    right: 75% !important;
+  }
+
+  .unity {
+    left: 75% !important;
+  }
+
+  nav ul {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 692px) {
+  nav {
+    margin-left: auto;
+    padding-right: 10px;
+  }
+
+  .main-section-one-text {
+    width: auto;
+  }
+
+  .leadmagnet {
+    padding-inline: 15px;
+  }
+
+  .leadmagnet-section {
+    padding-inline: 30px;
+  }
+
+  footer{
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .footer-logo-section{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-about ul{
+    display: flex;
+    gap: 20px;
+  }
+
+  .contact-footer{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .contact-footer p:first-child{
+    font-weight: bold;
+  }
+
+  .footer-title-head{
+    width: 20%;
+  }
 }

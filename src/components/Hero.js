@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <>
       <div className="hero-section">
-        <img alt="img" src="../images/unity.png" />
+        <img className="unity" alt="img" src="../images/unity.png" />
         <img className="unreal" alt="img" src="../images/unreal.png" />
         <div className="hero-text">
           <span>3D game Dev</span>

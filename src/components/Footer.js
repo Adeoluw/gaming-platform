@@ -7,11 +7,14 @@ import { FaLinkedin } from "react-icons/fa";
 
 
 export default function Footer() {
+
+
+
   return (
     <>
       <footer>
         <div className="footer-logo-section">
-          <h1>LOGO</h1>
+          <h1 className="footer-title-head">LOGO</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
@@ -20,7 +23,7 @@ export default function Footer() {
         </div>
         <div className="footer-about">
           <ul>
-            <li className="footer-about-head">About Us</li>
+            <li className="footer-about-head footer-title-head" >About Us</li>
             <li>Zeux</li>
             <li>Portfolio</li>
             <li>Carrers</li>
@@ -28,7 +31,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="contact-footer">
-          <p>contact us</p>
+          <p className="footer-title-head">contact us</p>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
