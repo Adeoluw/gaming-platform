@@ -42,6 +42,10 @@ nav {
   padding-right: 50px;
 }
 
+.close-menu {
+  display: none;
+}
+
 .header {
   display: flex;
   margin: 20px;
@@ -549,34 +553,193 @@ footer {
     padding-inline: 30px;
   }
 
-  footer{
+  footer {
     flex-direction: column-reverse;
     gap: 20px;
     align-items: flex-start;
   }
 
-  .footer-logo-section{
+  .footer-logo-section {
     display: flex;
     gap: 20px;
     width: 100%;
   }
 
-  .footer-about ul{
+  .footer-about ul {
     display: flex;
     gap: 20px;
   }
 
-  .contact-footer{
+  .contact-footer {
     display: flex;
     width: 100%;
     gap: 20px;
   }
 
-  .contact-footer p:first-child{
+  .contact-footer p:first-child {
     font-weight: bold;
   }
 
-  .footer-title-head{
+  .footer-title-head {
     width: 20%;
   }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #898989;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .mobile-menu {
+    margin-left: auto;
+  }
+
+  .header {
+    align-items: center;
+    position: relative;
+  }
+
+  .close-menu {
+    display: flex;
+    justify-content: end;
+    margin-left: 10px;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+    padding-inline: 35px;
+  }
+  .main-sectionone-head > h1 {
+    font-size: 22px;
+  }
+  .main-section-one-text h2 {
+    font-size: 20px;
+  }
+
+  .main-section-one-text {
+    padding-inline: 5px;
+  }
+
+  .main-sectionone {
+    padding-inline: 35px;
+  }
+
+  .dev-section-head {
+    width: 95%;
+  }
+
+  .categories {
+    padding-inline: 15px;
+  }
+
+  .dev-section-head h1 {
+    font-size: 22px;
+  }
+
+  .project-section {
+    padding-inline: 30px;
+  }
+
+  .hero-img img {
+    filter: drop-shadow(1px 1px 2px black);
+    width: 50%;
+  }
+
+  .trending-head h2 {
+    font-size: 22px;
+  }
+
+  .trending-games {
+    padding-inline: 35px;
+  }
+
+  .leadmagnet {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .lead-magnet-form {
+    width: 70%;
+  }
+
+  .leadmagnet-text {
+    width: 100%;
+  }
+
+  .project-section-head p{
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  body p {
+    font-size: 14px;
+  }
+
+  .hero-section h1 {
+    font-size: 20px;
+  }
+
+  .hero-text span {
+    font-size: 12px;
+  }
+
+  .trending-head h2 {
+    font-size: 16px;
+  }
+
+  .trending-head button {
+    padding: 7px;
+  }
+
+  .game {
+    width: 45%;
+  }
+
+  .allgames {
+    justify-content: center;
+  }
+
+  .main-sectionone-head > h1 {
+    font-size: 18px;
+  }
+
+  .main-section-one-text h2 {
+    font-size: 17px;
+  }
+
+  .dev-section-head h1 {
+    font-size: 18px;
+  }
+
+  .category {
+    width: 30%;
+  }
+
+  .dev-section-head {
+    padding-bottom: 5px;
+  }
+
+  .project-section-head h2 {
+    font-size: 20px;
+  }
+
+  .lead-magnet-form {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+.projects{
+  gap: 10px;
+}
 }

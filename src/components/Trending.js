@@ -25,7 +25,6 @@ export default function Trending() {
       .catch((error) => console.log("Error:", error));
   }, [1]);
 
-  console.log(gameList);
 
   const currentGames = (seeAll ? gameList.slice(0, 21) : gameList.slice(0, 3)).map((item) => {
     return (
