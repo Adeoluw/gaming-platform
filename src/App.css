@@ -674,7 +674,7 @@ footer {
     width: 100%;
   }
 
-  .project-section-head p{
+  .project-section-head p {
     line-height: 25px;
   }
 }
@@ -737,9 +737,159 @@ footer {
   }
 }
 
-
 @media only screen and (max-width: 470px) {
-.projects{
-  gap: 10px;
+  .projects {
+    gap: 10px;
+  }
 }
+
+@media only screen and (max-width: 400px) {
+  .hero-section {
+    padding-inline: 20px;
+  }
+
+  .trending-games {
+    padding-inline: 20px;
+  }
+
+  .main-sectionone {
+    padding-inline: 20px;
+    margin-top: 100px;
+  }
+
+  .main-section-one-text {
+    margin-top: 30px;
+  }
+
+  .project-section {
+    padding-inline: 20px;
+  }
+
+  .leadmagnet-section {
+    padding-inline: 20px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.about-hero-img {
+  width: 55%;
+}
+
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  padding-left: 100px;
+  margin-block: 100px;
+}
+
+.about-hero-img img {
+  width: 100%;
+}
+
+.about-hero-text {
+  width: 45%;
+  padding-inline: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-hero-text button {
+  width: 100px;
+  padding-inline: 10px;
+  padding-block: 10px;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #fb9e3c;
+  border: none;
+}
+
+.about-hero-text > span {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.about-hero-text > span > span {
+  color: #fb9e3c;
+}
+
+.work-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.work-card {
+  background-color: #1c140f;
+  border-radius: 15px;
+  line-height: 32px;
+  padding-inline: 40px;
+  padding-block: 45px;
+}
+
+.work-with-us {
+  padding-inline: 150px;
+  margin-block: 100px;
+}
+
+.work-with-us h2 {
+  margin-bottom: 60px;
+}
+
+.span-one {
+  padding-block: 6px;
+  padding-inline: 15px;
+  border-radius: 13px;
+  background-color: rgba(176, 0, 220, 0.2);
+}
+
+.span-two {
+  padding-block: 6px;
+  padding-inline: 15px;
+  border-radius: 13px;
+  background-color: rgba(220, 66, 0, 0.2);
+}
+
+.span-three {
+  padding-block: 6px;
+  padding-inline: 15px;
+  border-radius: 13px;
+  background-color: rgba(0, 220, 141, 0.2);
+}
+
+.work-card h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.about-section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #1c140f;
+  padding-top: 100px;
+}
+
+.about-section-one-img {
+  padding-bottom: 0;
+  width: 50%;
+  justify-content: center;
+  display: flex;
+}
+
+.about-section-one-text {
+  width: 50%;
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  padding-right: 258px;
+}
+
+.about-section-one-text span{
+  font-size: 13px;
 }

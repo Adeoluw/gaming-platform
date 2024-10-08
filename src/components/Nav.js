@@ -2,10 +2,19 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaWindowClose } from "react-icons/fa";
 
-export default function Header() {
+export default function Header(props) {
   const [mobile, setMobile] = useState(window.innerWidth < 692); // Initial check for screen width
 
-  const [openNav, setOpenNav] = useState(false);
+    const [openNav, setOpenNav] = useState(false);
+
+    function aboutPage() {
+        props.checkAbout(true)
+    }
+
+    function homePage() {
+        props.checkHome(true)
+        props.checkAbout(false)
+    }
 
   // Function to handle window resizing
   const handleResize = () => {
@@ -43,8 +52,8 @@ export default function Header() {
             <FaWindowClose onClick={toggleNav}/>
           </div>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
+            <li onClick={homePage}>Home</li>
+            <li onClick={aboutPage}>About Us</li>
             <li>Portfolio</li>
             <li>News</li>
             <li className="styled-button">Contact Us</li>
