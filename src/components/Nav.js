@@ -5,16 +5,16 @@ import { FaWindowClose } from "react-icons/fa";
 export default function Header(props) {
   const [mobile, setMobile] = useState(window.innerWidth < 692); // Initial check for screen width
 
-    const [openNav, setOpenNav] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
 
-    function aboutPage() {
-        props.checkAbout(true)
-    }
+  function aboutPage() {
+    props.checkAbout(true);
+  }
 
-    function homePage() {
-        props.checkHome(true)
-        props.checkAbout(false)
-    }
+  function homePage() {
+    props.checkHome(true);
+    props.checkAbout(false);
+  }
 
   // Function to handle window resizing
   const handleResize = () => {
@@ -49,7 +49,7 @@ export default function Header(props) {
       ) : (
         <nav>
           <div className="close-menu">
-            <FaWindowClose onClick={toggleNav}/>
+            <FaWindowClose onClick={toggleNav} />
           </div>
           <ul>
             <li onClick={homePage}>Home</li>
