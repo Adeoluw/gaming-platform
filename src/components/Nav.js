@@ -11,9 +11,14 @@ export default function Header(props) {
     props.checkAbout(true);
   }
 
+  function portfolioPage() {
+    props.checkPortfolio(true);
+  }
+
   function homePage() {
     props.checkHome(true);
     props.checkAbout(false);
+    props.checkPortfolio(false);
   }
 
   // Function to handle window resizing
@@ -54,7 +59,7 @@ export default function Header(props) {
           <ul>
             <li onClick={homePage}>Home</li>
             <li onClick={aboutPage}>About Us</li>
-            <li>Portfolio</li>
+            <li onClick={portfolioPage} >Portfolio</li>
             <li>News</li>
             <li className="styled-button">Contact Us</li>
           </ul>

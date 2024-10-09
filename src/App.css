@@ -1090,24 +1090,95 @@ footer {
 
   .work-with-us h2 {
     font-size: 20px;
-}
+  }
 
-.work-card h3 {
-  font-size: 17px;
-}
+  .work-card h3 {
+    font-size: 17px;
+  }
 
-.about-section-one-text h2{
-  font-size: 20px;
-}
+  .about-section-one-text h2 {
+    font-size: 20px;
+  }
 
-.our-team h1 {
-  margin-bottom: 50px;
-  font-size: 20px;
-}
+  .our-team h1 {
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 410px) {
   .about-section-one-text {
     padding-inline: 20px;
   }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+.portfolio-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 100px;
+  padding-inline: 200px;
+}
+
+.portfolio-hero > h1 {
+  line-height: 80px;
+}
+
+.portfolio-hero > span {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.portfolio-hero > span > span {
+  color: #fb9e3c;
+}
+
+.history {
+  display: flex;
+  gap: 20px;
+  background-color: #1c140f;
+  padding: 40px;
+}
+
+.history > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+}
+.stat-icon {
+  width: 25px;
+  height: 44px;
+  color: #dc7000;
+}
+
+.stat-icon-con {
+  padding: 10px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  padding-inline: 19px;
+  justify-content: center;
+  background-color: white;
+}
+
+.history {
+  display: flex;
+  gap: 20px;
+  background-color: #1c140f;
+  margin-top: 30px;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.clients {
+  border-right: 1px solid white;
+}
+
+.countries {
+  border-right: 1px solid white;
 }

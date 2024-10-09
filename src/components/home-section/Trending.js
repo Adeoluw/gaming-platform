@@ -2,14 +2,12 @@ import React from "react";
 import Games from "./Games";
 
 export default function Trending() {
-    const [gameList, setGameList] = React.useState([]);
-    const [seeAll, setSeeAll] = React.useState(false)
+  const [gameList, setGameList] = React.useState([]);
+  const [seeAll, setSeeAll] = React.useState(false);
 
-
-
-    function toggleAllGames() {
-        setSeeAll(prevstate => !prevstate)
-    }
+  function toggleAllGames() {
+    setSeeAll((prevstate) => !prevstate);
+  }
 
   React.useEffect(() => {
     fetch("https://free-to-play-games-database.p.rapidapi.com/api/games", {
@@ -25,18 +23,19 @@ export default function Trending() {
       .catch((error) => console.log("Error:", error));
   }, [1]);
 
-
-  const currentGames = (seeAll ? gameList.slice(0, 21) : gameList.slice(0, 3)).map((item) => {
+  const currentGames = (
+    seeAll ? gameList.slice(0, 21) : gameList.slice(0, 3)
+  ).map((item) => {
     return (
       <Games
-        key={item.id}        // Use item's id as the key
-        name={item.title}    // Pass title to the Games component
+        key={item.id} // Use item's id as the key
+        name={item.title} // Pass title to the Games component
         img={item.thumbnail} // Pass thumbnail URL
         link={item.game_url} // Pass the game URL
       />
     );
   });
-  
+
   return (
     <>
       <div className="trending-games">
