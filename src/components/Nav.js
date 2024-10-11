@@ -8,11 +8,14 @@ export default function Header(props) {
   const [openNav, setOpenNav] = useState(false);
 
   function aboutPage() {
-    props.checkAbout(true);
+      props.checkAbout(true);
+      props.checkHome(false)
   }
 
   function portfolioPage() {
-    props.checkPortfolio(true);
+      props.checkPortfolio(true);
+      props.checkAbout(false)
+      props.checkHome(false)
   }
 
   function homePage() {

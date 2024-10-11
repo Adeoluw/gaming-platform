@@ -1124,6 +1124,11 @@ footer {
 
 .portfolio-hero > h1 {
   line-height: 80px;
+  text-align: center;
+}
+
+.portfolio-hero p {
+  text-align: center;
 }
 
 .portfolio-hero > span {
@@ -1147,9 +1152,12 @@ footer {
 .history > div {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 35px;
   padding: 40px;
+  width: 30%;
+  justify-content: center;
 }
+
 .stat-icon {
   width: 25px;
   height: 44px;
@@ -1181,4 +1189,396 @@ footer {
 
 .countries {
   border-right: 1px solid white;
+}
+
+.spidey-section {
+  padding-inline: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 105px;
+  margin-block: 100px;
+  align-items: center;
+}
+
+.spidey-img-section {
+  width: 50%;
+}
+
+.spidey-text-section ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.spidey-text-section p {
+  margin-block: 20px;
+}
+
+.spidey-text-section {
+  padding-right: 100px;
+  width: 50%;
+}
+.psection-two {
+  padding-inline: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 105px;
+  margin-block: 100px;
+  align-items: center;
+}
+
+.psection-text {
+  padding-left: 100px;
+
+  width: 50%;
+}
+
+.psection-img {
+  display: flex;
+  width: 50%;
+}
+
+.psection-img img {
+  width: 70%;
+}
+
+.psection-text p {
+  margin-block: 20px;
+}
+
+.psection-text button {
+  padding-inline: 20px;
+  padding-block: 10px;
+  color: white;
+  cursor: pointer;
+  background-color: #fb9e3c;
+  border: none;
+}
+
+.psection-three-text {
+  padding-right: 100px;
+  width: 50%;
+}
+
+.psection-three-text p {
+  margin-block: 20px;
+}
+
+.psection-three-text button {
+  padding-inline: 20px;
+  padding-block: 10px;
+  color: white;
+  cursor: pointer;
+  background-color: #fb9e3c;
+  border: none;
+}
+
+.psection-three {
+  padding-inline: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 105px;
+  margin-block: 100px;
+  align-items: center;
+}
+
+.psection-three-img {
+  display: flex;
+  width: 50%;
+}
+
+.psection-three-img img {
+  width: 70%;
+  margin-left: auto;
+}
+
+.reviews-section {
+  padding-inline: 150px;
+  background-color: #1c140f;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding-block: 100px;
+}
+
+.review-section-head {
+  margin-bottom: 40px;
+  text-align: center;
+  width: 50%;
+}
+
+.review-section-head p {
+  margin-block: 30px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.review {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.reviewer-rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 3px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review-text {
+  margin-top: 10px;
+}
+
+.star {
+  color: #fea250;
+}
+
+@media only screen and (max-width: 1550px) {
+  .history {
+    padding-inline: 100px;
+  }
+
+  .spidey-img-section img {
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .spidey-img-section {
+    width: 50%;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .spidey-section {
+    gap: 50px;
+    padding-inline: 50px;
+  }
+  .psection-two {
+    gap: 50px;
+    padding-inline: 50px;
+  }
+  .psection-three {
+    gap: 50px;
+    padding-inline: 50px;
+  }
+
+  .reviews-section {
+    padding-inline: 20px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .reviews-section {
+    padding-inline: 50px;
+  }
+
+  .portfolio-hero {
+    padding-inline: 90px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .reviews-section {
+    padding-inline: 20px;
+  }
+
+  .spidey-img-section img {
+    width: 85%;
+  }
+
+  .psection-img img {
+    width: 85%;
+  }
+  .psection-three-img img {
+    width: 85%;
+  }
+
+  .review p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .history {
+    padding-inline: 20px;
+  }
+
+  .portfolio-hero > h1 {
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .spidey-text-section {
+    padding-right: 20px;
+  }
+
+  .psection-text {
+    padding-left: 20px;
+  }
+
+  .psection-three-text {
+    padding-right: 20px;
+  }
+
+  .stats h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .reviewer-info h4 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .review {
+    padding: 10px;
+  }
+
+  .spidey-text-section {
+    padding-right: 0;
+  }
+
+  .psection-text {
+    padding-left: 0;
+  }
+
+  .psection-three-text {
+    padding-right: 0;
+  }
+
+  .spidey-img-section img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .psection-img img {
+    width: 100%;
+  }
+
+  .psection-three-img img {
+    width: 100%;
+  }
+
+  .portfolio-hero {
+    padding-inline: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .review {
+    width: 50%;
+    height: 150px;
+  }
+
+  .stat-icon {
+    width: 15px;
+    height: 20px;
+    color: #dc7000;
+  }
+
+  .stat-icon-con {
+    padding-inline: 14px;
+  }
+
+  .history > div {
+    gap: 10px;
+  }
+
+  .review-section-head {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .spidey-section {
+    gap: 25px;
+    padding-inline: 30px;
+  }
+
+  .psection-two {
+    gap: 30px;
+    padding-inline: 30px;
+  }
+
+  .psection-three {
+    gap: 30px;
+    padding-inline: 30px;
+  }
+
+  .history {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .spidey-section {
+    flex-direction: column;
+  }
+
+  .spidey-img-section {
+    width: 80%;
+  }
+
+  .spidey-text-section {
+    width: 100%;
+    padding-inline: 40px;
+  }
+
+  .psection-two {
+    flex-direction: column-reverse;
+  }
+
+  .psection-img {
+    width: 80%;
+  }
+
+  .psection-text {
+    width: 100%;
+    padding-inline: 40px;
+  }
+
+  .psection-three {
+    flex-direction: column;
+  }
+
+  .psection-three-img {
+    width: 80%;
+  }
+
+  .psection-three-text {
+    width: 100%;
+    padding-inline: 40px;
+  }
+
+  .history > div {
+    padding: 5px;
+  }
+
+  .history {
+    padding-inline: 0px;
+  }
 }

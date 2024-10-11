@@ -13,6 +13,9 @@ import Work from "./components/about-section/Workwithus";
 import Aboutsectionone from "./components/about-section/Aboutsectionone";
 import Team from "./components/about-section/Team";
 import Portfoliohero from "./components/portfolio-section/portfoliohero";
+import Portfoliosectionone from "./components/portfolio-section/Portfoliosectioone";
+import Portfoliosectiontwo from "./components/portfolio-section/Portfoliosectiontwo";
+import Reviews from "./components/portfolio-section/Reviews";
 
 function App() {
   const [about, setAbout] = React.useState(false);
@@ -23,9 +26,9 @@ function App() {
     <div className="App">
       <Nav checkAbout={setAbout} checkHome={setHome} checkPortfolio={setPortfolio} />
       {about ? <Abouthero /> : portfolio ? <Portfoliohero /> : home ? <Hero /> : ""}
-      {about ? <Work /> : home ? <Trending /> : ""}
-      {about ? <Aboutsectionone /> : home ? <MainSectionOne /> : ""}
-      {about ? <Team /> : home ? <Devsection /> : ""}
+      {about ? <Work /> :  portfolio ? <Portfoliosectionone /> : home ? <Trending /> : ""}
+      {about ? <Aboutsectionone /> : portfolio ? <Portfoliosectiontwo /> : home ? <MainSectionOne /> : ""}
+      {about ? <Team />: portfolio ? <Reviews /> : home ? <Devsection /> : ""}
       {about ? "" : home ? <Projects /> : ""}
       <Emailsub />
       <Footer />
