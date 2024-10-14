@@ -1491,7 +1491,6 @@ footer {
 @media only screen and (max-width: 850px) {
   .review {
     width: 50%;
-    height: 150px;
   }
 
   .stat-icon {
@@ -1581,4 +1580,77 @@ footer {
   .history {
     padding-inline: 0px;
   }
+}
+
+@media only screen and (max-width: 630px) {
+  .portfolio-hero > h1 {
+    line-height: 35px;
+    font-size: 23px;
+  }
+
+  .portfolio-hero p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .stats h1 {
+    font-size: 18px;
+  }
+
+  .stats p {
+    font-size: 12px;
+  }
+
+  .spidey-text-section h1 {
+    font-size: 25px;
+  }
+
+  .psection-text h1 {
+    font-size: 25px;
+  }
+
+  .psection-three-text h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .spidey-text-section {
+    padding-inline: 20px;
+  }
+  .psection-text {
+    padding-inline: 20px;
+  }
+
+  .psection-three-text {
+    width: 100%;
+    padding-inline: 20px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .history > div {
+    padding: 0px;
+  }
+
+  /* .history {
+    display: flex;
+    gap: 10px;} */
+}
+
+@media only screen and (max-width: 390px) {
+  .history {
+    display: flex;
+    gap: 0px;
+  }
+  .stats h1 {
+    font-size: 14px;
+  }
+  .stats p {
+    font-size: 9px;
+  }
+
+  .history > div {
+    padding-inline: 57px;
+}
 }
