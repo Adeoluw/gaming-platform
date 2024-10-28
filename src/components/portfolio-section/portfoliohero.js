@@ -4,12 +4,12 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaDatabase } from "react-icons/fa";
 
-export default function Portfoliohero() {
+export default function Portfoliohero(props) {
   return (
     <>
       <div className="portfolio-hero">
         <span>
-          Home <FaArrowAltCircleRight /> <span>Services</span>
+          Home <FaArrowAltCircleRight /> <span>{props.checkPortfolio ? "Services" : props.checkNews ? "News" : ""}</span>
         </span>
         <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
         <p>

@@ -8,20 +8,31 @@ export default function Header(props) {
   const [openNav, setOpenNav] = useState(false);
 
   function aboutPage() {
-      props.checkAbout(true);
-      props.checkHome(false)
+    props.checkAbout(true);
+    props.checkNews(false);
+
+    props.checkHome(false);
   }
 
   function portfolioPage() {
-      props.checkPortfolio(true);
-      props.checkAbout(false)
-      props.checkHome(false)
+    props.checkPortfolio(true);
+    props.checkAbout(false);
+    props.checkHome(false);
+    props.checkNews(false);
   }
 
   function homePage() {
     props.checkHome(true);
     props.checkAbout(false);
     props.checkPortfolio(false);
+    props.checkNews(false);
+  }
+
+  function newsPage() {
+    props.checkHome(false);
+    props.checkAbout(false);
+    props.checkPortfolio(false);
+    props.checkNews(true);
   }
 
   // Function to handle window resizing
@@ -62,8 +73,8 @@ export default function Header(props) {
           <ul>
             <li onClick={homePage}>Home</li>
             <li onClick={aboutPage}>About Us</li>
-            <li onClick={portfolioPage} >Portfolio</li>
-            <li>News</li>
+            <li onClick={portfolioPage}>Portfolio</li>
+            <li onClick={newsPage}>News</li>
             <li className="styled-button">Contact Us</li>
           </ul>
         </nav>
