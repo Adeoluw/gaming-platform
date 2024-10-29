@@ -1691,6 +1691,7 @@ footer {
   width: 100%;
   justify-content: center;
   padding-inline: 100px;
+  margin-bottom: 70px;
   gap: 50px;
 }
 
@@ -1743,6 +1744,10 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.news-img img{
+  width: 100%;
 }
 
 .front-news p {
@@ -1829,7 +1834,6 @@ footer {
     align-items: center;
     border-radius: 20px;
     background: #333333;
-    margin-bottom: 70px;
   }
 
   .news-list-slide {
