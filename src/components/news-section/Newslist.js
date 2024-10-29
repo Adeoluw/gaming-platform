@@ -4,6 +4,7 @@ export default function Newslist() {
   return (
     <>
       <div className="news-list">
+        <div className="news-list-slide">
         <div className="news">
           <div className="news-img">
             <img src="../images/news-one.png" alt="img" />
@@ -93,6 +94,7 @@ export default function Newslist() {
             </div>
             <h4>Lorem Ipsum is simply dummy text dummy text ? </h4>
           </div>
+        </div>
         </div>
       </div>
     </>

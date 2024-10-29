@@ -5,7 +5,7 @@ export default function Frontnews() {
     <>
       <div className="front-news">
         <div className="news-one">
-          <img src="../images/female-character.png" />
+          <img src="../images/front-news-one.png" />
           <div>
             <button>John Smash</button>
           </div>
@@ -23,7 +23,7 @@ export default function Frontnews() {
           </p>
         </div>
         <div className="news-two">
-          <img src="../images/abouthero.png" />
+          <img src="../images/front-news-two.png" />
           <div>
             <button>John Smash</button>
           </div>
