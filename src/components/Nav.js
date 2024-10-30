@@ -12,6 +12,8 @@ export default function Header(props) {
     props.checkNews(false);
 
     props.checkHome(false);
+    props.checkContact(false);
+
   }
 
   function portfolioPage() {
@@ -19,6 +21,8 @@ export default function Header(props) {
     props.checkAbout(false);
     props.checkHome(false);
     props.checkNews(false);
+    props.checkContact(false);
+
   }
 
   function homePage() {
@@ -26,6 +30,8 @@ export default function Header(props) {
     props.checkAbout(false);
     props.checkPortfolio(false);
     props.checkNews(false);
+    props.checkContact(false);
+
   }
 
   function newsPage() {
@@ -33,7 +39,18 @@ export default function Header(props) {
     props.checkAbout(false);
     props.checkPortfolio(false);
     props.checkNews(true);
+    props.checkContact(false);
   }
+
+  function contactPage() {
+    props.checkHome(false);
+    props.checkAbout(false);
+    props.checkPortfolio(false);
+    props.checkNews(false);
+    props.checkContact(true);
+  }
+
+
 
   // Function to handle window resizing
   const handleResize = () => {
@@ -75,7 +92,7 @@ export default function Header(props) {
             <li onClick={aboutPage}>About Us</li>
             <li onClick={portfolioPage}>Portfolio</li>
             <li onClick={newsPage}>News</li>
-            <li className="styled-button">Contact Us</li>
+            <li onClick={contactPage} className="styled-button">Contact Us</li>
           </ul>
         </nav>
       )}

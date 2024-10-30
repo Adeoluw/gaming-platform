@@ -17,18 +17,18 @@ import Portfoliosectionone from "./components/portfolio-section/Portfoliosectioo
 import Portfoliosectiontwo from "./components/portfolio-section/Portfoliosectiontwo";
 import Reviews from "./components/portfolio-section/Reviews";
 import Newshero from "./components/news-section/Newshero";
+import Contacthero from "./components/contact-section/Contacthero";
+import Contactbody from "./components/contact-section/Contactbody";
 // import newsdata from "./newsdata"
-
-
-
 
 function App() {
   const [about, setAbout] = React.useState(false);
   const [home, setHome] = React.useState(true);
   const [portfolio, setPortfolio] = React.useState(false);
   const [news, setNews] = React.useState(false);
+  const [contact, setContact] = React.useState(false);
 
-// console.log(newsdata)
+  // console.log(newsdata)
 
   return (
     <div className="App">
@@ -37,13 +37,16 @@ function App() {
         checkHome={setHome}
         checkPortfolio={setPortfolio}
         checkNews={setNews}
+        checkContact={setContact}
       />
       {about ? (
         <Abouthero />
       ) : portfolio ? (
         <Portfoliohero checkPortfolio={setPortfolio} checkNews={setNews} />
       ) : news ? (
-        <Newshero  />
+        <Newshero />
+      ) : contact ? (
+        <Contacthero />
       ) : home ? (
         <Hero />
       ) : (
@@ -53,6 +56,8 @@ function App() {
         <Work />
       ) : portfolio ? (
         <Portfoliosectionone />
+      ) : contact ? (
+        <Contactbody />
       ) : home ? (
         <Trending />
       ) : (
