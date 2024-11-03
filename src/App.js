@@ -19,7 +19,7 @@ import Reviews from "./components/portfolio-section/Reviews";
 import Newshero from "./components/news-section/Newshero";
 import Contacthero from "./components/contact-section/Contacthero";
 import Contactbody from "./components/contact-section/Contactbody";
-// import newsdata from "./newsdata"
+import Contactform from "./components/contact-section/Contactform";
 
 function App() {
   const [about, setAbout] = React.useState(false);
@@ -67,6 +67,8 @@ function App() {
         <Aboutsectionone />
       ) : portfolio ? (
         <Portfoliosectiontwo />
+      ) : contact ? (
+        <Contactform />
       ) : home ? (
         <MainSectionOne />
       ) : (

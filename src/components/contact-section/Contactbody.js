@@ -17,18 +17,18 @@ export default function Contactbody() {
           <div className="contact-socials">
             <p>Follow us</p>
             <div className="social-type">
-              <FaFacebook />
-              <FaInstagram />
-              <FaXTwitter />
-              <FaLinkedin />
+              <FaFacebook className="contact-icon" />
+              <FaInstagram className="contact-icon" />
+              <FaXTwitter className="contact-icon" />
+              <FaLinkedin className="contact-icon" />
             </div>
           </div>
           <div className="phone-contact">
-            <FaPhoneVolume />
+            <FaPhoneVolume className="contact-icon" />
             <p>+94 4444 5555 6</p>
           </div>
           <div className="location-contact">
-            <FaLocationDot />
+            <FaLocationDot className="contact-icon" />
             <p>but also the leap into electronic typesetting</p>
           </div>
         </div>

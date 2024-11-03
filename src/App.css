@@ -1921,3 +1921,137 @@ footer {
 
   flex-direction: column;
 }
+
+.contact-section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  background-color: #1c140f;
+  padding-block: 100px;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.contact-form {
+  margin-top: 35px;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-form-name form {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-form-name form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-name form > input {
+  width: 100%;
+}
+
+.contact-form-email form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-message form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input {
+  background-color: #cecece;
+  border-radius: 10px;
+  padding: 6px;
+  border: 1px solid white;
+}
+
+.contact-form textarea {
+  background-color: #cecece;
+  border-radius: 10px;
+  padding: 6px;
+  border: 1px solid white;
+}
+
+.contact-form > div {
+  margin-bottom: 15px;
+}
+
+.contact-form-name {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1043px) {
+  .contact-trio {
+    padding-inline: 100px;
+  }
+}
+
+@media only screen and (max-width: 897px) {
+  .contact-trio {
+    padding-inline: 55px;
+  }
+}
+
+@media only screen and (max-width: 807px) {
+  .contact-trio {
+    padding-inline: 20px;
+    justify-content: space-between;
+  }
+
+  .contact-trio p {
+    font-size: 12px;
+  }
+
+  .contact-trio > div {
+    padding: 15px;
+    width: 33.333%;
+  }
+}
+
+@media only screen and (max-width: 807px) {
+  .social-type {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .social-type {
+    gap: 13px;
+  }
+
+  .contact-icon {
+    width: 16px;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .contact-trio > div {
+    padding: 9px;
+    width: 33.333%;
+  }
+}
+
+@media only screen and (max-width: 467px) {
+  .phone-contact {
+    gap: 5px;
+  }
+
+  .location-contact {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .contact-trio > div {
+    padding: 5px;
+  }
+}
