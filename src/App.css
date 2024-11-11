@@ -362,8 +362,19 @@ footer {
   justify-content: space-evenly;
 }
 
+.contact-footer p:last-child {
+  margin-top: 15px;
+}
+
 .footer-about ul li {
   list-style-type: none;
+}
+
+.footer-li-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
 }
 
 .footer-about-head {
@@ -391,6 +402,11 @@ footer {
 .footer-logo-section {
   width: 25%;
 }
+
+/* .footer-middle {
+  display: flex;
+  gap: 20px;
+} */
 
 .contact-footer {
   width: 25%;
@@ -546,6 +562,13 @@ footer {
     width: auto;
   }
 
+  .footer-li-body {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+
   .leadmagnet {
     padding-inline: 15px;
   }
@@ -560,8 +583,13 @@ footer {
     align-items: flex-start;
   }
 
+  .contact-footer p:last-child {
+    margin-top: 0px;
+  }
+
   .footer-logo-section {
     display: flex;
+    align-items: center;
     gap: 20px;
     width: 100%;
   }
@@ -575,6 +603,7 @@ footer {
     display: flex;
     width: 100%;
     gap: 20px;
+    align-items: center;
   }
 
   .contact-footer p:first-child {
@@ -583,6 +612,15 @@ footer {
 
   .footer-title-head {
     width: 20%;
+    font-size: medium;
+  }
+
+  .footer-about {
+    width: 100%;
+  }
+
+  .footer-middle {
+    width: 50%;
   }
 
   nav ul {
@@ -735,6 +773,15 @@ footer {
 
   .lead-magnet-form {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .footer-li-body {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 0;
   }
 }
 
@@ -1077,9 +1124,37 @@ footer {
   }
 }
 
+/* @media only screen and (max-width: 429px) {
+  .footer-middle {
+      width: 45%;
+  }
+
+  .contact-footer {
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.footer-about ul {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-logo-section {
+  display: flex;
+  gap: 10px;
+}
+} */
+
 @media only screen and (max-width: 447px) {
   .about-hero-text {
     padding-inline: 20px;
+  }
+}
+
+@media only screen and (max-width: 509px) {
+  .footer-title-head {
+    width: 20%;
+    font-size: small;
   }
 }
 
@@ -1849,6 +1924,10 @@ footer {
   .news-list-slide {
     width: 85%;
   }
+
+  footer {
+    padding-inline: 30px;
+  }
 }
 
 @media only screen and (max-width: 475px) {
@@ -2020,6 +2099,22 @@ footer {
 @media only screen and (max-width: 807px) {
   .social-type {
     gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .contact-footer {
+    gap: 5px;
+  }
+
+  .footer-about ul {
+    display: flex;
+    gap: 5px;
+  }
+
+  .footer-logo-section {
+    display: flex;
+    gap: 5px;
   }
 }
 
